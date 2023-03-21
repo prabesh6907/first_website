@@ -1,0 +1,172 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body {
+    margin: 0; /* By default, browser(chrome) sets its value to 8px(on all sides)*/
+    text-align: center;
+    color:#40514e;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Kanit', sans-serif; */
+    /* font-family: 'Inconsolata', monospace; */
+    /* font-family: 'Josefin Slab', serif; */
+}
+.Section1 {
+    /* background-color: rgb(153, 213, 250); */
+    /* background-color: #ddf2f4; */
+    /* background-color: #387f8a; */
+    /* background-color: #90adba; */
+    /* background-color: #507f96; */
+    /* background-color: #0b617f; */
+    background-color: #69baaf;
+    position: relative;
+    padding-top: 100px;
+}
+.Section2 {
+    /* background-color: #faf6ef; */
+    padding-top: 35px;
+    padding-bottom: 10px;
+    background-image: url('../images/bgD.png'); /* CSS file is in css folder. the '../' takes us one level above the file structure level i.e to the folder 2nd project. Then we navigate into images */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment:scroll;
+}
+.Section3 {
+    background-color: #f5cc97;
+    padding-top: 20px;
+    clear: left;
+}
+/*To know default values we can use inspect*/
+h1 {
+    margin: 0; /* By default, browser(chrome) sets its value: 
+                        margin-block-start(top): 0.67em;
+                        margin-block-end(down): 0.67em;
+                        margin-inline-start(left): 0px;
+                        margin-inline-end(right): 0px;
+                */
+    font-family: 'Satisfy', cursive;
+    /* line-height: 2; */
+    /*It increases space between upper and lower elements w.r.t it.*/ /*preferred not to give any units*/
+    color:#1c3226;
+    font-size: 375%; /* 100% ~ 16px ~ 1em for fonts. em and % are dynamic while px is static*/
+}
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+    color:#1d5f46;
+    padding-bottom: 0.7em;
+}
+h3 {
+    font-family: 'Acme', sans-serif;
+    color: #10526e;
+    font-size: 25px;
+}
+h4{
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+}
+p {
+    font-size: larger;
+}
+hr {
+    margin-bottom:0;
+    width: 4%;
+    border-style: dotted none none;
+    border-width:0.5em;
+    border-color: #f1aa61;
+}
+a {
+    color: lightsteelblue;
+    text-decoration: none; /*By default it is underline for anchor tag*/
+}
+a:hover {
+    color:whitesmoke;
+}
+#subintro {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: normal;
+    color:#1c3226;
+    font-size: 1.3125rem; /*rem(root em) will ignore the parent settings(body---> default size) for font size */
+}
+#cloud1 {
+    position:absolute;
+    right:350px;
+    top:50px;
+}
+#cloud2 {
+    position: absolute;
+    left:350px;
+    bottom:300px;
+}
+.profile {
+    position: relative;
+    margin:auto;
+    width:73.5%;
+}
+.skill-row {
+    margin: 80px auto 100px auto; /*top right bottom left.....clockwise*/
+    width:50%;
+}
+.skillinfo {
+    line-height: 1.5;/*It is like line spacing*/
+}
+.frontend {
+    width:20%; /* W.R.T its parent i.e. 'div=skill-info' */
+}
+.web-design {
+    width:18%;
+}
+.aboutContact {
+    width:56%;
+    margin:50px auto 0 auto;
+    text-align: left;
+}
+.getintouch {
+    width:30%;
+    float:left;
+    margin-right: 2em;
+    border-radius: 50%;
+}
+.ContactMebtn {
+    clear:left;
+    text-align: center;
+    padding-top: 1em;
+}
+.socials {
+    margin-bottom: 0px;
+}
+.credits {
+    text-align: left;
+    /* font-size: 12px; */
+    font-size:x-small;
+    margin: 0 auto 0 auto;
+}
+
+/* Taken from css3buttongenerator.com */
+.btn {
+    background: #eb9665;
+    background-image: -webkit-linear-gradient(top, #eb9665, #f0c59c);
+    background-image: -moz-linear-gradient(top, #eb9665, #f0c59c);
+    background-image: -ms-linear-gradient(top, #eb9665, #f0c59c);
+    background-image: -o-linear-gradient(top, #eb9665, #f0c59c);
+    background-image: linear-gradient(to bottom, #eb9665, #f0c59c);
+    -webkit-border-radius: 100;
+    -moz-border-radius: 100;
+    border-radius: 100px;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #ffc070;
+    background-image: -webkit-linear-gradient(top, #ffc070, #f3dfbc);
+    background-image: -moz-linear-gradient(top, #ffc070, #f3dfbc);
+    background-image: -ms-linear-gradient(top, #ffc070, #f3dfbc);
+    background-image: -o-linear-gradient(top, #ffc070, #f3dfbc);
+    background-image: linear-gradient(to bottom, #ffc070, #f3dfbc);
+    text-decoration: none;
+  }
