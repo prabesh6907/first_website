@@ -278,19 +278,20 @@ a:hover {
     font-family: Courier New;
     color: #ffffff;
     font-size: 20px;
-    padding: 10px 20px 10px 20px;
     text-decoration: none;
 }
 @media screen and (min-width: 481px) {
     .btn {
       font-size: 125%;
+      padding: 10px 20px 10px 20px;
     }
 }
 @media screen and (max-width: 480px) {
     .btn {
       font-size: 62.5%;
+      padding: 5px 10px 5px 10px;
     }
-}  
+} 
 .btn:hover {
     background: #ffc070;
     background-image: -webkit-linear-gradient(top, #ffc070, #f3dfbc);
