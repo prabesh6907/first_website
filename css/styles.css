@@ -175,14 +175,14 @@ a:hover {
     #cloud1 {
         position:absolute;
         right:370px;
-        top:56px;
+        top:68px;
     }
 }
 @media screen and (max-width: 480px) {
     #cloud1 {
         position:absolute;
         right:110px;
-        top:90px;
+        top:98px;
     }
 }
 
