@@ -22,11 +22,12 @@ body {
     position: relative;
     padding-top: 100px;
 }
+
 .Section2 {
     /* background-color: #faf6ef; */
     padding-top: 35px;
     padding-bottom: 10px;
-    background-image: url('../images/bgD.png'); /* CSS file is in css folder. the '../' takes us one level above the file structure level i.e to the folder 2nd project. Then we navigate into images */
+    background-image: url('../images/bgD.png'); /* CSS file is in css folder. the '../' takes us one level above the file structure level i.e to the folder 2nd project. Then we navigate into images */    
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -51,24 +52,78 @@ h1 {
     color:#1c3226;
     font-size: 375%; /* 100% ~ 16px ~ 1em for fonts. em and % are dynamic while px is static*/
 }
+/* If the screen size is 481px wide or more, set the font-size of <div> to 60px */
+@media screen and (min-width: 481px) {
+    h1 {
+      font-size: 375%;
+    }
+}  
+  /* If the screen size is 480px wide or less, set the font-size of <div> to px */
+@media screen and (max-width: 480px) {
+    h1 {
+      font-size: 187.5%;
+    }
+}
+
 h2 {
     font-family: 'Permanent Marker', cursive;
     font-size: 35px;
     color:#1d5f46;
     padding-bottom: 0.7em;
 }
+@media screen and (min-width: 481px) {
+    h2 {
+      font-size: 218.75%;
+    }
+}
+@media screen and (max-width: 480px) {
+    h2 {
+      font-size: 109.375%;
+    }
+}
+
 h3 {
     font-family: 'Acme', sans-serif;
     color: #10526e;
     font-size: 25px;
 }
+@media screen and (min-width: 481px) {
+    h3 {
+      font-size: 156.25%;
+    }
+}
+@media screen and (max-width: 480px) {
+    h3 {
+      font-size: 78.125%;
+    }
+}
+
 h4{
     font-family: 'Play', sans-serif;
     font-size: 20px;
 }
-p {
-    font-size: larger;
+@media screen and (min-width: 481px) {
+    h4 {
+      font-size: 125%;
+    }
 }
+@media screen and (max-width: 480px) {
+    h4 {
+      font-size: 62.5%;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    p {
+      font-size: 125%;
+    }
+}
+@media screen and (max-width: 480px) {
+    p {
+      font-size: 62.5%;
+    }
+}
+
 hr {
     margin-bottom:0;
     width: 4%;
@@ -76,6 +131,18 @@ hr {
     border-width:0.5em;
     border-color: #f1aa61;
 }
+@media screen and (min-width: 481px) {
+    hr {
+      width: 4%;
+    }
+}
+@media screen and (max-width: 480px) {
+    hr {
+      width: 4%;
+      border-width:0.25em;
+    }
+}
+
 a {
     color: lightsteelblue;
     text-decoration: none; /*By default it is underline for anchor tag*/
@@ -83,21 +150,65 @@ a {
 a:hover {
     color:whitesmoke;
 }
+
 #subintro {
     font-family: 'Architects Daughter', cursive;
     font-weight: normal;
     color:#1c3226;
     font-size: 1.3125rem; /*rem(root em) will ignore the parent settings(body---> default size) for font size */
 }
-#cloud1 {
-    position:absolute;
-    right:350px;
-    top:50px;
+@media screen and (min-width: 481px) {
+    #subintro {
+      font-size: 131.25%;
+    }
 }
+@media screen and (max-width: 480px) {
+    #subintro {
+      font-size: 65.625%;
+    }
+}
+
+#cloud1 {
+    width:10%;
+}
+@media screen and (min-width: 481px) {
+    #cloud1 {
+        position:absolute;
+        right:370px;
+        top:56px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #cloud1 {
+        position:absolute;
+        right:110px;
+        top:90px;
+    }
+}
+
 #cloud2 {
-    position: absolute;
-    left:350px;
-    bottom:300px;
+    width:10%;
+    float: left;
+}
+@media screen and (min-width: 481px) {
+    #cloud2 {
+        position: absolute;
+        left:350px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #cloud2 {
+        position: absolute;
+        left:100px;
+    }
+}
+
+#mountain {
+    width:50%;
+    clear: left;
+}
+#pp {
+    width:22%;
 }
 .profile {
     position: relative;
@@ -106,26 +217,26 @@ a:hover {
 }
 .skill-row {
     margin: 80px auto 100px auto; /*top right bottom left.....clockwise*/
-    width:50%;
+    width:70%;
 }
 .skillinfo {
     line-height: 1.5;/*It is like line spacing*/
 }
 .frontend {
-    width:20%; /* W.R.T its parent i.e. 'div=skill-info' */
+    width:25%; /* W.R.T its parent i.e. 'div=skill-info' */
 }
 .web-design {
-    width:18%;
+    width:23%;
 }
 .aboutContact {
-    width:56%;
+    width:72.5%;
     margin:50px auto 0 auto;
     text-align: left;
 }
 .getintouch {
-    width:30%;
+    width:34%;
     float:left;
-    margin-right: 2em;
+    margin-right: 1.2em;
     border-radius: 50%;
 }
 .ContactMebtn {
@@ -141,6 +252,16 @@ a:hover {
     /* font-size: 12px; */
     font-size:x-small;
     margin: 0 auto 0 auto;
+}
+@media screen and (min-width: 481px) {
+    .credits {
+      font-size: 75%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .credits {
+      font-size: 37.5%;
+    }
 }
 
 /* Taken from css3buttongenerator.com */
@@ -159,9 +280,18 @@ a:hover {
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-  }
-  
-  .btn:hover {
+}
+@media screen and (min-width: 481px) {
+    .btn {
+      font-size: 125%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .btn {
+      font-size: 62.5%;
+    }
+}  
+.btn:hover {
     background: #ffc070;
     background-image: -webkit-linear-gradient(top, #ffc070, #f3dfbc);
     background-image: -moz-linear-gradient(top, #ffc070, #f3dfbc);
@@ -169,4 +299,4 @@ a:hover {
     background-image: -o-linear-gradient(top, #ffc070, #f3dfbc);
     background-image: linear-gradient(to bottom, #ffc070, #f3dfbc);
     text-decoration: none;
-  }
+}
